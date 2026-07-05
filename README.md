@@ -28,19 +28,19 @@ Clicking the **"Start Learning"** button seamlessly opens a dedicated dashboard 
 ## 🛠️ Technology Used
 
 | Category | Technologies |
+| :--- | :--- |
 | **Frontend Core** | HTML5, CSS3 |
 | **Logic & Automation** | JavaScript (DOM Manipulation, Interval Timers, Audio Playback Control) |
 | **Data Storage** | **JSON** (Acts as a lightweight database storing text labels, image paths, and audio file references) |
 | **Hosting & Deployment** | GitHub Pages |
 
 
-
 ## 🛑 Challenges Faced & Solutions
 
 ### 1. Structuring and Managing Multi-Asset Data Records
-*   **The Challenge:** Managing a large database of flashcards—where each single card requires referencing two separate image URLs, a text label, and an audio file path—without cluttering the JavaScript code.
-*   **The Solution:** Stored all educational data inside a structured `data.json` file. JavaScript dynamically fetches this JSON file, parsing the asset paths on the fly based on the chosen category, keeping the codebase modular and easily scalable.
+   **The Challenge:** Managing a large database of flashcards—where each single card requires referencing two separate image URLs, a text label, and an audio file path—without cluttering the JavaScript code.
+   **The Solution:** Stored all educational data inside a structured `data.json` file. JavaScript dynamically fetches this JSON file, parsing the asset paths on the fly based on the chosen category, keeping the codebase modular and easily scalable.
 
 ### 2. Synchronizing Manual Controls (Forward/Prev) with the Auto-Cycle Timer
-*   **The Challenge:** When a user clicks the "Forward" or "Previous" buttons, the automatic cycling timer would conflict with manual navigation, causing cards to skip too quickly or overlap audio files.
-*   **The Solution:** Implemented a timer reset pattern. Clicking the **Forward**, **Previous**, or **Stop** buttons instantly clears the active JavaScript interval (`clearInterval`), handles the manual card change or audio pause, and safely restarts the countdown loop from zero for the next card.
+ **The Challenge:** When a user clicks the "Forward" or "Previous" buttons, the automatic cycling timer would conflict with manual navigation, causing cards to skip too quickly or overlap audio files.
+   **The Solution:** Implemented a timer reset pattern. Clicking the **Forward**, **Previous**, or **Stop** buttons instantly clears the active JavaScript interval (`clearInterval`), handles the manual card change or audio pause, and safely restarts the countdown loop from zero for the next card.
