@@ -14,13 +14,18 @@ Clicking the **"Start Learning"** button seamlessly opens a dedicated dashboard 
 ## 🚀 Features
 
 *   **Multi-Page Dashboard Flow:** Clicking **"Start Learning"** navigates the user from the landing page to a clean, focused learning dashboard.
+  
 *   **Vibrant Learning Categories:** Quick-access buttons for foundational development topics including **ABC, 123, COLOUR, and FRUITS**.
+  
 *   **Rich Media Flashcards:** Each flashcard step dynamically displays **2 images**, **1 text element**, and plays **synchronized audio** narration all at once.
+  
 *   **Hands-Free Auto-Cycle:** Automatically transitions to the next rich-media card after a few seconds, removing the need for manual clicking.
+  
 *   **Full Playback Controls:** Equipped with **Forward**, **Previous**, and **Stop** buttons, giving parents or children the ability to manually skip ahead, review a card, or freeze the automated cycle instantly.
+  
 *   **Safe & Ad-Free:** Structured to ensure an effortless environment entirely free from disruptive ad-popups or external links.
 
----
+
 
 ## 🌐 Live Demo
 🔗 https://priyakumari-hub.github.io/baby_learnmate/
@@ -37,10 +42,10 @@ Clicking the **"Start Learning"** button seamlessly opens a dedicated dashboard 
 
 ## 🛑 Challenges Faced & Solutions
 
-### 1. Structuring and Managing Multi-Asset Data Records
+ 1. Structuring and Managing Multi-Asset Data Records
    **The Challenge:** Managing a large database of flashcards—where each single card requires referencing two separate image URLs, a text label, and an audio file path—without cluttering the JavaScript code.
    **The Solution:** Stored all educational data inside a structured `data.json` file. JavaScript dynamically fetches this JSON file, parsing the asset paths on the fly based on the chosen category, keeping the codebase modular and easily scalable.
 
-### 2. Synchronizing Manual Controls (Forward/Prev) with the Auto-Cycle Timer
- **The Challenge:** When a user clicks the "Forward" or "Previous" buttons, the automatic cycling timer would conflict with manual navigation, causing cards to skip too quickly or overlap audio files.
+ 2. Synchronizing Manual Controls (Forward/Prev) with the Auto-Cycle Timer
+   **The Challenge:** When a user clicks the "Forward" or "Previous" buttons, the automatic cycling timer would conflict with manual navigation, causing cards to skip too quickly or overlap audio files.
    **The Solution:** Implemented a timer reset pattern. Clicking the **Forward**, **Previous**, or **Stop** buttons instantly clears the active JavaScript interval (`clearInterval`), handles the manual card change or audio pause, and safely restarts the countdown loop from zero for the next card.
