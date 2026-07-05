@@ -1,0 +1,1509 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height:100vh;
+    overflow-x: hidden !important;
+    background:#eb73ed;
+    min-width:100%;
+}
+
+
+.home{
+    background:linear-gradient(90deg,#adfffd 0%,#ccb1f7 50%,#eb73ed 100%);
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+#head{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    height:30vh;
+    width:100vw;
+}
+
+#butterfly{
+    height:100%;
+    animation: fly 3s ease-in-out infinite ;
+}
+
+#unicorn{
+     height:100%;
+      animation: swing 3s ease-in-out infinite alternate;
+   
+}
+
+#heading{
+       font-size:6vw;
+       margin: 0;
+       font-family:cursive;
+    }
+
+
+#board{
+    position: absolute;
+    top:25vh;
+    left:5vw;
+    height:50vh;
+    width:30vw;
+}
+
+#monkey{
+    position: absolute;
+    top:32vh;
+    left:-2vw;
+    width:15%;
+    height:25%;
+    z-index:2;
+    animation: swing 3s ease-in-out infinite alternate;
+    
+}
+
+#elephant{
+    position: absolute;
+    top:60%;
+    left:30%;
+    width:18%;
+    height:20%;
+    z-index: 2;
+}
+
+#cloud3{
+    position: absolute;
+    top:65%;
+    left:33%;
+    width:17%;
+}
+
+
+#rainbow{
+    position: absolute;
+    top:33%;
+    right:-12%;
+    width:50%;
+    height:55%;
+    transform:rotate(-30deg);
+}
+
+#cloud1{
+  position: absolute;
+  top:3%;
+  right:1%;
+  transform:rotate(15deg);
+  height:18%;
+}
+
+#cloud4{
+    position: absolute;
+    top:23vh;
+    right:5vw;
+    width:15%;
+    animation: sky 3s ease-in-out infinite alternate ;
+}
+
+#cloud5{
+    position: absolute;
+    top:38vh;
+    right:28vw;
+    height:18%;
+}
+
+#buttons{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index:3;
+    position: absolute;
+    margin:0.5vh 2.5vw;
+    top:39vh;
+    left:10vw;
+    max-height:56vh;
+    max-width: 30vw;
+}
+
+.button1{
+   padding:0.5vh 1vw;
+   border-radius:30px;
+   width:15vw;
+   height:7vh;
+   font-weight: bolder;
+   font-size:2vh;
+   background-color:rgb(163, 241, 176);
+   border:0;
+   box-shadow: 0px 10px 10px 5px rgb(60, 192, 27);
+}
+
+.button1:hover{
+    background-color: rgb(241, 219, 13);
+    transform: translateY(-12px) scale(1);
+    box-shadow: 0px 10px 10px 5px rgb(240, 238, 153);
+  }
+
+
+  .logo{
+    height:5%;
+  }
+/* other section starts*/
+
+#other{
+    margin:2% 2.5%;
+    border-radius:60px;
+    background-color:#c6ebbc;
+    width:95vw;
+    height: 95vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trees{
+   
+ max-height:90%;
+}
+
+#tree{
+    height:70vh;
+    position: relative;
+    left:-80%;
+    bottom:60%;
+}
+
+
+#row{
+   display:flex;
+   gap:30px;
+   max-width:90vh;
+   justify-content: center;
+   flex-wrap: wrap;
+   position: relative;
+   top:36%;
+   left:18%;
+}
+
+.about{
+    display: flex;
+    max-width:90vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:40px;
+    position: relative;
+    top:10%;
+    
+}
+
+.aboutus{
+    background-color: #f7f9f2;
+    border-radius: 50px;
+    padding:40px;
+    flex:1;
+    flex-wrap: wrap;
+    height:100%;
+    align-items: flex-start;
+    box-shadow: 0 10px 30px rgba(45,90,39,0.05);   
+}
+
+.aboutus h1,.contact h1{
+
+    font-size:5vh;
+    font-weight: bolder;
+}
+
+.aboutus p,.contact p{
+    margin:5px;
+    padding:5px;
+    font-size:1.5vw;
+    text-align: justify;
+}
+
+#monkey1{
+    position:relative;
+    top:-72%;
+    right:45%;
+    transform-origin: top center;
+    animation: swing 3s ease-in-out infinite alternate;
+    height:20vh;
+}
+
+#peacock{
+    
+    position:relative;
+    top:-68%;
+    right:-55%;
+    height:30vh;
+    width:10vw;
+    z-index: 2;
+}
+
+#bird{
+    height:10vh;
+    position: absolute;
+    top:105vh;
+    left:6vw;
+    animation: sky 3s ease-in-out infinite ;
+}
+
+
+
+#honeybee{
+    height:10vh;
+    position: relative;
+    top:-58%;
+    right:-1%;
+    z-index: 2;
+    
+}
+
+#bird1{
+    position:absolute;
+    top:115vh;
+    left:30vw;
+    height:10vh;
+    animation: sky 3s ease-in-out infinite alternate ;
+}
+
+#hill{
+    
+    width:100%;
+    height:20vh;
+    background-color:#62864a;
+    clip-path:ellipse(60% 100% at 20% 100%);
+    z-index:1;
+    position: absolute;
+    top:179vh;
+    left:2.5vw;
+}
+
+#hill1{
+    margin-top:-8%;
+    margin-left:50%;
+    width:50%;
+    height:16vh;
+    z-index:2;
+    background-color: #80b35f;
+    clip-path:ellipse(80% 100% at 80% 100%);
+    position: absolute;
+    top:200vh;
+    right:1.5vw;
+    
+}
+
+
+/* working section*/
+
+#working{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width:95vw;
+    margin:2% 2.5%;
+    border-radius:60px;
+    background-image:url("images/book.png") ;
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+#work_head{
+ 
+    width:100%;
+    font-size:10vh;
+    font-family:Georgia, 'EB Garamond', serif;
+    font-weight: 800;
+    color: #231815;
+    text-transform:capitalize;
+    position: relative;
+    left:22vw;
+    top:11vh;
+
+}
+
+#work_container{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   position: relative;
+   top:15vh;
+}
+
+.work{
+    font-size: 2.5vh;
+    margin: 1% 15% 5% 15%;
+    width:90%;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.work p{
+    width:85%;
+}
+
+#snail{
+    width: 10%;
+    position: relative;
+    left:13%;
+    top:-70%;
+    animation:sky 4s ease-in-out infinite ;
+}
+
+#ship{
+    position: relative;
+    left:44vw;
+    top:-7vh;
+    width:20%;
+    animation:swing 6s ease-in-out infinite alternate;
+}
+  
+#bear{
+    position: relative;
+    left:2%;
+    top:-14%;
+    width:10%;
+}
+
+#abcblock{
+    position: relative;
+    left:60%;
+    top:-65%;
+    width:13%;
+}
+
+
+/* Contact section*/
+
+#contact{
+    
+    overflow: hidden;
+    background-color: beige;
+    width:95vw;
+    height:95vh;
+    margin:2% 2.5%;
+    border-radius:60px;
+    
+}
+
+#contact_head{
+    font-size:6vw;
+    margin:2% 5%;
+    padding: 2%;
+    position: relative;
+    left:13vw;
+    width:100%;
+}
+
+
+#contact_container
+{
+    padding:3vh;
+    margin:2% 5%;
+    border-radius:60px;
+    height:60%;
+    background-color: #c7e47a;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap:30px;
+}
+
+.container3{
+    padding: 4%;
+    width:40%;
+    margin:2%;
+    border-radius:60px;
+    display:flex;
+    flex-direction:column;
+    background-color: #194608;
+    color: white;
+  
+}
+
+
+.container3 h2{
+  font-size:5vh;
+  font-weight: 600;
+}
+ 
+.container3 p{
+     font-size:3vh;
+     font-weight: 300;
+     
+}
+
+
+.container3 button{
+    padding:2vh;
+    margin:3vh 2vh;
+    text-align: center;
+    
+}
+
+#flower{
+    position: relative;
+    top:-85vh;
+    left:70vw;
+    width:10%;
+    
+}
+
+#grasshopper{
+    width:10%;
+    position: relative;
+    top:-12vh;
+    left:15vw;
+    animation: jump 4s ease-in-out infinite;
+    
+}
+
+
+footer{
+    overflow-x: hidden;
+    width:100%;
+    background-color: #27012b;
+    color: white;
+    height:auto;
+    font-size: 3vh;
+    padding:2%;
+    margin-top:5%;
+    }
+
+#footers{
+   display: flex;
+   flex-direction:row;
+   justify-content: center;
+
+}
+
+footer h3{
+    font-size:5vh;
+    color: darkorange;
+    padding-bottom:6%;
+}
+
+footer hr{
+    width: 100%;
+    margin:0 1%;
+}
+
+.footer_column{
+    padding: 2%;
+    gap:30px;
+    margin:3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_column a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.footer_column a:hover{
+    color:yellow;
+}
+
+.copyright{
+  padding-top:2%;  
+  text-align: center;
+}
+
+
+
+/*mobile view changes*/
+
+@media (max-width:600px) {
+    
+    body{
+       overflow-x:hidden !important; 
+    }
+    
+    #head{
+        height:30vh;   
+         width:100vw;
+         margin:0 5% ;
+    }
+
+    #butterfly{
+        height:40%;
+
+    }
+
+    #unicorn{
+        height:26%;
+    }
+ 
+    #heading{
+        font-size:330%;
+    }
+
+    #board{
+       height:20%;
+       width:40%;
+       position: absolute;
+       top:20%;
+       left:13%
+    }
+
+    #monkey{
+      position: absolute;
+      top:24%;
+      left:5%;
+      width:15%;
+      height:18%;
+    }
+
+    #elephant{
+    position: absolute;
+    top:35%;
+    left:37%;
+    width:30%;
+    height:16%;
+   }
+
+   #cloud3{
+    position: absolute;
+    top:53%;
+    left:27%;
+    width:30%;
+    animation: cloud 3s ease-in-out infinite alternate ;
+    z-index: 3;
+   }
+
+   #rainbow{
+    position: absolute;
+    top:59%;
+    right:9%;
+    width:60%;
+    height:30%;
+    transform:rotate(-25deg);
+   }
+
+   #cloud1{
+   position: absolute;
+   top:16%;
+   right:1%;
+   transform:rotate(15deg);
+   height:12%;
+   }
+
+   #cloud4{
+    position: absolute;
+    top:30%;
+    left:70%;
+    width:34%;
+    }
+
+    #cloud5{
+    position: absolute;
+    top:83%;
+    left:3%;
+    height:14%;
+    transform:rotate(15deg);
+    }
+
+    #buttons{
+    
+    position: absolute;
+    top:25%;
+    left:20%;
+   }
+
+   .button1{
+   width:80%;
+   height:10%;
+   font-size:2vh;
+   }
+  
+   #other{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-radius:2%;
+    width:95%;
+    height:auto;
+    margin:2% 3.5%;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    #row
+    {
+      gap:10px;
+      max-width:90%;
+      height:80%;
+      margin:0 5%;
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      top:18%;
+      left:1%;
+      
+    
+   }
+
+   .about{
+    display: flex;
+     flex-direction: column;
+     margin:0 3%;
+   }
+
+
+    .aboutus{
+       position:relative;
+       margin:10% 0 5% 0;
+       top:3%;
+       left:2%;
+       min-width:5vw;
+    }
+
+.aboutus h1{
+
+    font-size:205%;
+}
+
+.aboutus p{
+    font-size:105%;
+}
+
+
+   #tree{
+    height:70vh;
+    width:90%;
+    position: relative;
+    left:-10%;
+    top:23vh;
+   
+    }
+
+    
+    #monkey1{
+    position:relative;
+    top:51.5vh;
+    right:32%;
+    height:15vh;
+}
+
+#peacock{
+    position: relative;
+    top:-45vh;
+    right:-25vw;
+    height:55%;
+    width:35%;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.logo{
+         width:45%;
+  }
+
+#bird{
+    height:9vh;
+    position: relative;
+    top:3vh;
+    left:-10vw;
+}
+
+#honeybee{
+    height:9vh;
+    position:relative;
+    right:-35%;
+    animation: cloud 3s ease-in-out infinite ;
+}
+
+#bird1{
+    position:relative;
+    top:7vh;
+    left:34vw;
+    height:9vh;
+}
+
+#hill{
+    
+    width:150%;
+    height:20vh;
+    position:relative;
+    top:15vh;
+    left:-20vw;
+}
+
+#hill1{
+    margin-top:-8%;
+    margin-left:50%;
+    width:100%;
+    height:20vh;
+    position: relative;
+    top:0vh;
+    right:0vw;
+    
+    }
+
+    /* working section*/
+
+ #working{
+    width:95%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 95vh;
+}
+
+
+#work_head{
+ 
+    width:100%;
+    font-size:6vw;
+    position: relative;
+    top:14%;
+    left:20%;
+}
+#work_container{
+    width:80%;
+    margin:2% 10%;
+    position: relative;
+    top:12vh;
+}
+
+
+.work{
+    font-size:85%;
+    position: relative;
+    
+}
+
+#container1{
+    position: relative;
+    top:2vh;
+    width: 90%;
+}
+
+#container2{
+    position: relative;
+    top:2vh;
+    width:90%
+}
+
+.work p{
+    width:95%;
+    padding:2%;
+}
+
+#snail{
+    position: relative;
+    left:85%;
+    top:10%;
+    animation:sky 6s ease-in-out infinite ;
+    width:20%;
+
+}
+
+#ship{
+    position: relative;
+    left:5%;
+    top:-18%;
+    width:25%;
+}
+  
+#bear{
+    position: relative;
+    left:-20%;
+     top:10%;
+    transform: rotate(-25deg);   
+    width:25%;
+}
+
+#abcblock{
+    position: relative;
+    top:-30%;
+    left:-45%;
+    width:20%;
+}
+
+/*contact section mobile*/
+
+
+
+#contact_head{
+    font-size:5vw;
+    padding: 3%;
+    width:100%;
+    position: relative;
+    left:15%;
+}
+
+
+#contact_container
+{
+    padding:5vh;
+    margin:2% 8%;
+    height:80%;
+    gap:30px;
+   
+}
+
+.container3{
+    width:90%;
+    border-radius:10%;
+}
+
+
+.container3 h2{
+  font-size:155%;
+  padding: 2% 5%;
+}
+ 
+.container3 p{
+     font-size:140%;
+     padding: 2% 6%;
+     
+}
+
+
+.container3 button{
+    padding:2vh;
+    margin:3vh;
+    width:60%;
+    height:60%   
+}
+
+#flower{
+    position: relative;
+    top:-83%;
+    left:60%;
+    
+}
+
+#grasshopper{
+    width:20%;
+}
+
+}
+
+
+@media (min-width:601px) and (max-width:1300px)  {
+
+
+    body{
+        overflow-x: hidden;
+    }
+    
+    #head{
+        height:30vh;
+        width:100vw;
+        margin:0 5%;
+    }
+
+     #butterfly{
+        height:40%;
+    }
+
+    #unicorn{
+        height:45%;
+    }
+ 
+    #heading{
+        font-size:620%;
+    }
+
+    #board{
+       height:30%;
+       width:40%;
+       position: absolute;
+       top:25%;
+       left:10%;
+    }
+
+     #monkey{
+      position: absolute;
+      top:30%;
+      left:4%;
+      width:15%;
+      height:22%;
+    }
+
+    #elephant{
+    position: absolute;
+    top:46%;
+    left:30%;
+    width:30%;
+   }
+
+   #cloud3{
+    position: absolute;
+    top:65%;
+    left:37%;
+    width:23%;
+
+   }
+
+  #rainbow{
+    position: absolute;
+    top:58%;
+    right:4.5%;
+    width:31%;
+    height:30%;
+    transform:rotate(-25deg);
+   }
+
+ #cloud1{
+   position: absolute;
+   top:22%;
+   right:-1%;
+   transform:rotate(15deg);
+   height:12%;
+   }
+
+   #cloud4{
+    position: absolute;
+    top:30%;
+    right:15%;
+    width:25%;
+    }
+ 
+    #cloud5{
+    position: absolute;
+    top:80%;
+    left:5%;
+    height:14%;
+    transform:rotate(15deg);
+    }
+
+    #buttons{
+    
+    position: absolute;
+    top:35%;
+    left:19%;
+   }
+
+   .button1{
+   width:80%;
+   height:10%;
+   font-size:2vh;
+   }
+
+      #other{
+    overflow-x: hidden;
+    border-radius:2%;
+    width:93%;
+    height:auto;
+    margin:2% 3.5%;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    #row
+    {
+      gap:10px;
+      max-width:90%;
+    
+      margin:0 2%;
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      top:20vh;
+      left:-1vw;
+
+      
+    
+   }
+
+   .about{
+    display: flex;
+     flex-direction: column;
+     margin:0 3%;
+     
+   }
+
+
+    .aboutus{
+       position:relative;
+       margin:6% 0 3% 0;
+       top:-12vh;
+       left:4vw;
+       min-width:5vw;
+    }
+
+.aboutus h1{
+
+    font-size:205%;
+}
+
+.aboutus p{
+    font-size:155%;
+}
+
+
+   #tree{
+    height:70vh;
+    width:90%;
+    position: relative;
+    left:-10%;
+    top:23vh;
+   
+    }
+
+    #monkey1{
+    position:relative;
+    top:80.5vh;
+    right:-5%;
+    height:15vh;
+}
+
+#peacock{
+    position: relative;
+    top:-55vh;
+    right:-32vw;
+    height:55%;
+    width:25%;
+}
+
+
+.logo{
+         width:12rem;
+  }
+
+
+#bird{
+    height:12vh;
+    position: relative;
+    top:12vh;
+    left:-6vh;
+}
+
+#honeybee{
+    height:15vh;
+    position:relative;
+    top:-15vh;
+    right:-35%;
+    animation: cloud 3s ease-in-out infinite ;
+}
+
+#bird1{
+    position:relative;
+    top:185%;
+    left:35vw;
+    height:12vh;
+}
+
+#hill{
+    
+    width:150%;
+    height:20vh;
+    position:relative;
+    top:15vh;
+    left:-20vw;
+}
+
+#hill1{
+    margin-top:-8%;
+    margin-left:50%;
+    width:100%;
+    height:20vh;
+    position: relative;
+    top:0vh;
+    right:0vw;
+    
+    }
+
+
+    #working{
+    width:95%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 95vh;
+}
+
+
+#work_head{
+ 
+    width:100%;
+    font-size:6vw;
+    position: relative;
+    top:12%;
+    left:20%;
+}
+
+#work_container{
+    width:80%;
+    margin:2% 10%;
+    position: relative;
+    top:9vh;
+}
+
+
+.work{
+    font-size:125%;
+    position: relative;
+    margin:1% 14%;
+    
+}
+
+#container1{
+    position: relative;
+    top:2vh;
+    width: 80%;
+}
+
+#container2{
+    position: relative;
+    top:2vh;
+    width:80%
+}
+
+.work p{
+    width:95%;
+    padding:2%;
+}
+
+#snail{
+    position: relative;
+    left:75%;
+    top:-6%;
+    animation:sky 6s ease-in-out infinite ;
+    width:20%;
+
+}
+
+#ship{
+    position: relative;
+    left:5%;
+    top:-30%;
+    width:25%;
+}
+  
+#bear{
+    position: relative;
+    left:-20%;
+    transform: rotate(-25deg);
+    top:2%;
+    left:-20%;
+    width:23%;
+}
+
+#abcblock{
+    position: relative;
+    top:-40%;
+    left:-45%;
+    width:20%;
+   }
+
+
+   /*contact section mobile*/
+
+
+#contact{
+    height: 100%;
+}
+
+
+#contact_head{
+    font-size:250%;
+    padding: 3%;
+    position: relative;
+    left:15%;
+}
+
+
+#contact_container
+{
+    padding:5vh;
+    margin:2% 8%;
+    height:80%;
+    gap:30px;
+   
+}
+
+.container3{
+    width:80%;
+    border-radius:7%;
+}
+
+
+.container3 h2{
+  font-size:155%;
+  padding: 2% 5%;
+}
+ 
+.container3 p{
+     font-size:140%;
+     padding: 2% 6%;
+     
+}
+
+
+.container3 button{
+    padding:2vh;
+    margin:3vh;
+    width:60%;
+    height:60%   
+}
+
+#flower{
+    position: relative;
+    top:-83%;
+    left:60%;
+    
+}
+
+#grasshopper{
+    width:20%;
+}
+
+
+
+
+}
+
+
+/*animationns*/
+
+@keyframes swing{
+    0%{
+        transform:rotate(0deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    
+}
+
+@keyframes fly {
+    0%{
+        transform:scaleY(1) translateY(0);
+    }
+      50%{
+        transform:scaleY(0.85) translateY(-14px);
+    }
+     100%{
+        transform:scaleY(1) translateY(0);
+    }
+
+}
+
+@keyframes sky{
+    0%{
+        transform:translate(0);
+    }
+
+    100%{
+        transform:translate(-100px,-25px);
+    }
+}
+
+@keyframes cloud{
+    0%{
+        transform:translate(0);
+    }
+
+    100%{
+        transform:translate(-68px,20px);
+    }
+}
+
+
+@keyframes jump {
+    0%{
+        transform:translate(0,0);
+    }
+      50%{
+        transform:translate(-40px,-180px);
+    }
+     100%{
+        transform:translate(-180px,0);
+    }
+
+}
+
+
+
+
+
+/*home pg css*/
+
+.controls{
+   width:100%;
+   height:5vh;
+   display: flex;
+   flex-direction:row;
+   flex-wrap: wrap;
+   padding:0 2%;
+   gap:0.5rem;
+   
+}
+
+.content-btn{
+   padding:0 1%;
+    border-radius: 10px;
+    font-size:1vw;
+    border-radius: 20px;
+}
+
+.btn{
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: row;
+ margin-top:1.5% ;
+}
+
+.content-btn:hover
+{
+    background-color: rgb(182, 230, 154);
+    color:red;
+}
+
+
+#contentContainer
+{
+    height:95vh;
+    margin-top:0.5%;
+
+}
+
+.display-card{  
+    width:100vw;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.display-card p{  
+    font-size:7vw ;
+    margin:0;
+    text-align: center;
+}
+
+.display-card h1{
+    margin:0;
+    font-size:2.2vh;
+}
+
+.display-card button{
+    width: 15%;
+    height:5%;
+    margin:0 1%;
+    border-radius: 20px;
+    font-size:3vh;
+}
+
+.display-card button:hover{
+    background-color:red;
+    color: yellow;
+}
+
+.disp{
+    display:flex;
+    flex-direction:row;
+    margin:0 5%;
+    padding:2%;
+    width:80%;
+    height:75%;  
+}
+
+.learn-img{
+    border-radius: 5px;
+     display:flex;
+    flex-direction:row;
+     width:55%;        
+     padding:2%;
+}
+
+#contentContainer text{
+    position: absolute;
+}
+
+
+
+@media (min-width:300px) and (max-width:700px)
+{
+
+    .content-btn{
+
+    font-size:4vw;
+   }
+
+   .btn{
+    margin-top:1.5%;
+   }
+
+    #contentContainer{
+        margin-top: 25%;
+        height:90vh;
+        
+    }
+    
+    .disp{
+         height:50%;
+         width:90%;
+         padding:0;
+    }
+
+    .learn-img{
+        width:50%;
+        height:80%;
+    }
+
+    .display-card button{
+        width:30%;
+        height:4rem;
+    }
+
+    .display-card p{
+        margin:4% ;
+         font-size:12vw ;
+         
+    }
+
+
+}
+
+@media (min-width:701px) and (max-width:1200px)
+{
+
+    .content-btn{
+
+    font-size:3vw;
+   }
+
+    #contentContainer{
+        margin-top: 15%;
+        height:90vh;
+    }
+    
+    .disp{
+         height:55%;
+         width:90%;
+    }
+
+    .learn-img{
+        width:50%;
+        height:80%;
+        margin-top: 4%;
+    }
+
+    .display-card button{
+        width:30%;
+        height:4rem;
+    }
+
+    .display-card p{
+        margin:2% ;
+         font-size:12vw ;
+         
+    }
+
+
+}
